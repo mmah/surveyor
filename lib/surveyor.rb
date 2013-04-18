@@ -6,7 +6,7 @@ require 'surveyor/acts_as_response'
 require 'formtastic/surveyor_builder'
 # require 'surveyor/surveyor_controller_methods'
 # require 'surveyor/models/survey_methods'
-Formtastic::SemanticFormHelper.builder = Formtastic::SurveyorBuilder
-Formtastic::SemanticFormBuilder.default_text_area_height = 5
-Formtastic::SemanticFormBuilder.default_text_area_width = 50
-Formtastic::SemanticFormBuilder.all_fields_required_by_default = false
+Formtastic::Helpers::FormHelper.builder = Formtastic::SurveyorBuilder
+Formtastic::FormBuilder.default_text_area_height = 5
+Formtastic::FormBuilder.default_text_area_width = 50
+Formtastic::FormBuilder.all_fields_required_by_default = false
